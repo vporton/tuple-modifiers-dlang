@@ -1,0 +1,23 @@
+{
+  "name": "tuple-modifiers",
+  "authors": [
+    "Victor Porton"
+  ],
+  "description": "Modify tuple modifiers.",
+  "copyright": "Copyright © 2019, Victor Porton",
+  "license": "Apache 2.0",
+  "configurations": [
+    {
+      "name": "test",
+      "targetType": "executable"
+    },
+    {
+      "name": "static",
+      "targetType": "staticLibrary"
+    },
+    {
+      "name": "shared",
+      "targetType": "dynamicLibrary"
+    }
+  ]
+}

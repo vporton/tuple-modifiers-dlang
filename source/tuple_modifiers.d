@@ -13,7 +13,7 @@ static assert(is(tc[1] == const shared float));```
 */
 template addTupleModifiers(string modifiers, T...) {
     private template addModifier(T1) {
-        mixin("alias addModifier = " ~ modifiers ~ ' ' ~ T1.stringof ~ ';');
+        mixin("alias addModifier = " ~ modifiers ~ " T1;");
     }
 
     alias addTupleModifiers = staticMap!(addModifier, T);
